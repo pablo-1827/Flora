@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications — OpportunityHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <a href="dashboard.html" class="brand">
+                <span class="brand-mark">O</span>
+                <span>OpportunityHub</span>
+            </a>
+            <nav class="topbar-nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="opportunities.html">Discover</a>
+                <a href="saved.html">Saved</a>
+                <a href="applications.html" class="active">Applications</a>
+            </nav>
+            <button id="logoutButton" class="btn btn-secondary small" type="button">Logout</button>
+        </header>
+
+        <main class="page-container">
+            <section class="content-panel">
+                <div class="section-header">
+                    <h2>My applications</h2>
+                </div>
+                <div id="applicationsList" class="applications-list"></div>
+                <div id="applicationsEmpty" class="empty-state" hidden>You have not applied to any opportunity yet.</div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/applications.js"></script>
+</body>
+</html>
+

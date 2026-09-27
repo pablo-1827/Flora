@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Create account — OpportunityHub</title>
+
+    <meta
+        name="description"
+        content="Create your OpportunityHub account and start discovering opportunities matched to you."
+    >
+
+    <!-- Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- OpportunityHub styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+<main class="auth-page register-page">
+
+    <!-- Decorative background -->
+    <div class="auth-glow auth-glow--one"></div>
+    <div class="auth-glow auth-glow--two"></div>
+
+
+    <section class="auth-shell register-shell">
+
+        <!-- Brand -->
+        <a
+            href="index.html"
+            class="auth-brand"
+            aria-label="OpportunityHub home"
+        >
+            <span class="brand-mark">O</span>
+            <span>OpportunityHub</span>
+        </a>
+
+
+        <!-- Register Card -->
+        <div class="auth-card register-card">
+
+            <!-- Header -->
+            <div class="auth-header">
+
+                <span class="auth-eyebrow">
+                    GET STARTED
+                </span>
+
+                <h1>
+                    Build your opportunity profile.
+                </h1>
+
+                <p>
+                    Tell us a little about yourself.
+                    We'll use it to find opportunities that fit.
+                </p>
+
+            </div>
+
+
+            <!-- Registration Form -->
+            <form
+                class="auth-form register-form"
+                id="registerForm"
+            >
+
+                <!-- Name -->
+                <div class="form-field">
+
+                    <label for="name">
+                        Full name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-field">
+
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- College -->
+                <div class="form-field">
+
+                    <label for="college">
+                        College
+                    </label>
+
+                    <input
+                        type="text"
+                        id="college"
+                        name="college"
+                        placeholder="Your college or university"
+                        autocomplete="organization"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Degree / Branch -->
+                <div class="form-grid">
+
+                    <div class="form-field">
+
+                        <label for="degree">
+                            Degree
+                        </label>
+
+                        <select
+                            id="degree"
+                            name="degree"
+                            required
+                        >
+                            <option value="" selected disabled>
+                                Select degree
+                            </option>
+
+                            <option value="B.Tech">
+                                B.Tech
+                            </option>
+
+                            <option value="B.E.">
+                                B.E.
+                            </option>
+
+                            <option value="B.Sc">
+                                B.Sc
+                            </option>
+
+                            <option value="BCA">
+                                BCA
+                            </option>
+
+                            <option value="M.Tech">
+                                M.Tech
+                            </option>
+
+                            <option value="MCA">
+                                MCA
+                            </option>
+
+                            <option value="M.Sc">
+                                M.Sc
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="branch">
+                            Branch
+                        </label>
+
+                        <input
+                            type="text"
+                            id="branch"
+                            name="branch"
+                            placeholder="Computer Engineering"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Year -->
+                <div class="form-field">
+
+                    <label for="year">
+                        Current year
+                    </label>
+
+                    <select
+                        id="year"
+                        name="year"
+                        required
+                    >
+                        <option value="" selected disabled>
+                            Select year
+                        </option>
+
+                        <option value="1">
+                            First year
+                        </option>
+
+                        <option value="2">
+                            Second year
+                        </option>
+
+                        <option value="3">
+                            Third year
+                        </option>
+
+                        <option value="4">
+                            Final year
+                        </option>
+
+                        <option value="5">
+                            Postgraduate
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-field">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="password-field">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                            aria-label="Show password"
+                        >
+                            <span id="passwordToggleText">
+                                Show
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <span class="field-hint">
+                        Use at least 8 characters.
+                    </span>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="form-field">
+
+                    <label for="confirmPassword">
+                        Confirm password
+                    </label>
+
+                    <div class="password-field">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Enter your password again"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Terms -->
+                <label class="remember-option terms-option">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+
+                    <span class="custom-checkbox"></span>
+
+                    <span>
+                        I agree to the
+                        <a href="#" class="inline-link">
+                            terms and privacy policy
+                        </a>.
+                    </span>
+
+                </label>
+
+
+                <!-- Status / Error -->
+                <div
+                    class="auth-message"
+                    id="authMessage"
+                    role="alert"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- Submit -->
+                <button
+                    type="submit"
+                    class="btn btn-primary auth-submit"
+                    id="registerButton"
+                >
+
+                    <span id="registerButtonText">
+                        Create my account
+                    </span>
+
+                    <span
+                        class="button-arrow"
+                        aria-hidden="true"
+                    >
+                        →
+                    </span>
+
+                </button>
+
+            </form>
+
+
+            <!-- Login -->
+            <div class="auth-divider">
+                <span>already have an account?</span>
+            </div>
+
+            <div class="auth-register">
+
+                <a href="login.html">
+                    Log in instead
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <div class="auth-footer">
+
+            <a href="index.html">
+                ← Back to OpportunityHub
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/register.js"></script>
+
+</body>
+</html>

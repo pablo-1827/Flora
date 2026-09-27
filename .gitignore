@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+.venv312/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs / temporary files
+*.log
+*.tmp
+
+# Local debug/output files
+debug_output.txt
+pytest_profile.txt
+phase4_verify.txt
+phase4_exit.txt
+final_phase4_output.txt
+test_summary.txt
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Frontend dependencies/build
+node_modules/
+dist/
+build/
+
+# ZIP archives
+*.zip

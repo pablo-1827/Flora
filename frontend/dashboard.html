@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — OpportunityHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <a href="dashboard.html" class="brand">
+                <span class="brand-mark">O</span>
+                <span>OpportunityHub</span>
+            </a>
+            <nav class="topbar-nav">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="opportunities.html">Discover</a>
+                <a href="saved.html">Saved</a>
+                <a href="applications.html">Applications</a>
+            </nav>
+            <button id="logoutButton" class="btn btn-secondary small" type="button">Logout</button>
+        </header>
+
+        <main class="page-container">
+            <section class="hero-panel">
+                <h1 id="welcomeName">Welcome back</h1>
+                <p id="profileMeta">Loading your profile…</p>
+            </section>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <span class="label">Recommendations</span>
+                    <span class="value" id="statOpportunityCount">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Saved</span>
+                    <span class="value" id="statSavedCount">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Applications</span>
+                    <span class="value" id="statApplicationsCount">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Best match</span>
+                    <span class="value" id="statBestMatch">0%</span>
+                </div>
+            </section>
+
+            <section class="content-panel">
+                <div class="section-header">
+                    <h2>Recommended for you</h2>
+                </div>
+                <div id="recommendationsList" class="recommendations-list"></div>
+                <div id="recommendationsEmpty" class="empty-state" hidden>No recommendations yet. Add your profile details and explore opportunities.</div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+
