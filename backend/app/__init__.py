@@ -1,0 +1,1 @@
+"""OpportunityHub backend package."""
